@@ -1,0 +1,196 @@
+{
+  "functions": [
+    {
+      "name": "YfStkPrice",
+      "description": "Gets the current stock price for a given symbol",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "sym": {
+            "type": "string",
+            "description": "A valid stock market symbol (e.g., \"AAPL\" for Apple Inc.)"
+          }
+        },
+        "required": ["sym"]
+      },
+      "returnType": "string",
+      "returnFormat": "$XX.XX"
+    },
+    {
+      "name": "YfStkSymbol",
+      "description": "Retrieves the stock symbol, useful for verification or display purposes",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "sym": {
+            "type": "string",
+            "description": "A valid stock market symbol (e.g., \"MSFT\" for Microsoft)"
+          }
+        },
+        "required": ["sym"]
+      },
+      "returnType": "string",
+      "returnFormat": "Symbol string"
+    },
+    {
+      "name": "YfStkPrevClose",
+      "description": "Gets the previous day's closing price for a stock",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "sym": {
+            "type": "string",
+            "description": "A valid stock market symbol (e.g., \"GOOGL\" for Google)"
+          }
+        },
+        "required": ["sym"]
+      },
+      "returnType": "string",
+      "returnFormat": "$XX.XX"
+    },
+    {
+      "name": "YfStkDelta",
+      "description": "Gets the absolute price change (in dollars) from previous close",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "sym": {
+            "type": "string",
+            "description": "A valid stock market symbol (e.g., \"AMZN\" for Amazon)"
+          }
+        },
+        "required": ["sym"]
+      },
+      "returnType": "string",
+      "returnFormat": "$XX.XX"
+    },
+    {
+      "name": "YfStkDeltaPerc",
+      "description": "Gets the percentage price change from previous close",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "sym": {
+            "type": "string",
+            "description": "A valid stock market symbol (e.g., \"META\" for Meta)"
+          }
+        },
+        "required": ["sym"]
+      },
+      "returnType": "string",
+      "returnFormat": "XX.XX%"
+    },
+    {
+      "name": "YfStkChange",
+      "description": "Gets both the price change and percentage change in a combined format",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "sym": {
+            "type": "string",
+            "description": "A valid stock market symbol (e.g., \"TSLA\" for Tesla)"
+          }
+        },
+        "required": ["sym"]
+      },
+      "returnType": "string",
+      "returnFormat": "$XX.XX (XX.XX%)"
+    },
+    {
+      "name": "YfStkExchange",
+      "description": "Gets the full name of the exchange where the stock is traded",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "sym": {
+            "type": "string",
+            "description": "A valid stock market symbol (e.g., \"NFLX\" for Netflix)"
+          }
+        },
+        "required": ["sym"]
+      },
+      "returnType": "string",
+      "returnFormat": "Exchange name string"
+    },
+    {
+      "name": "YfStkExchangeSymbol",
+      "description": "Gets the symbol/abbreviation of the exchange where the stock is traded",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "sym": {
+            "type": "string",
+            "description": "A valid stock market symbol (e.g., \"IBM\" for IBM)"
+          }
+        },
+        "required": ["sym"]
+      },
+      "returnType": "string",
+      "returnFormat": "Exchange symbol string"
+    },
+    {
+      "name": "YfStkCurrency",
+      "description": "Gets the currency in which the stock is traded",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "sym": {
+            "type": "string",
+            "description": "A valid stock market symbol (e.g., \"NVDA\" for NVIDIA)"
+          }
+        },
+        "required": ["sym"]
+      },
+      "returnType": "string",
+      "returnFormat": "Currency code"
+    },
+    {
+      "name": "YfStkFirstTrade",
+      "description": "Gets the date and time when the stock was first traded",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "sym": {
+            "type": "string",
+            "description": "A valid stock market symbol (e.g., \"AMD\" for Advanced Micro Devices)"
+          }
+        },
+        "required": ["sym"]
+      },
+      "returnType": "string",
+      "returnFormat": "YYYY-MM-DD HH:mm:ss"
+    },
+    {
+      "name": "YfStkMarketTime",
+      "description": "Gets the current market time for the stock",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "sym": {
+            "type": "string",
+            "description": "A valid stock market symbol (e.g., \"INTC\" for Intel)"
+          }
+        },
+        "required": ["sym"]
+      },
+      "returnType": "string",
+      "returnFormat": "YYYY-MM-DD HH:mm:ss"
+    },
+    {
+      "name": "YfStkInstrument",
+      "description": "Gets the type of financial instrument (e.g., stock, ETF, etc.)",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "sym": {
+            "type": "string",
+            "description": "A valid stock market symbol (e.g., \"SPY\" for S&P 500 ETF)"
+          }
+        },
+        "required": ["sym"]
+      },
+      "returnType": "string",
+      "returnFormat": "Instrument type string"
+    }
+  ]
+}
