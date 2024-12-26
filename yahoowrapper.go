@@ -1,5 +1,5 @@
-// package yahoowrapper
-package main
+package yahoowrapper
+//package main
 
 import (
 	"fmt"
@@ -163,7 +163,7 @@ func YfStkInstrument(sym string) string {
 	return c.InstrumentType()
 }
 
-func main() {
+func Testmain() {
 	// Example usage of all functions
 	symbol := "AAPL"
 	fmt.Printf("Symbol: %s\n", YfStkSymbol(symbol))
